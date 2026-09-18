@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mythic+ Mechanic Refresher — Midnight S2</title>
+  <meta name="description" content="Quick boss mechanic refreshers for Midnight Season 2 Mythic+ dungeons." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="keystone">+</span>
+      <div>
+        <h1>Mythic+ Refresher</h1>
+        <p>Midnight Season 2 · Curse of Ula'tek · Patch 12.1</p>
+      </div>
+    </div>
+    <label class="search-wrap">
+      <span class="sr-only">Search mechanics</span>
+      <input id="search" type="search" placeholder="Search boss, mechanic, dungeon…" autocomplete="off" />
+    </label>
+  </header>
+  <nav class="filters" aria-label="Dungeon filters">
+    <button class="chip active" data-dungeon="all">All dungeons</button>
+  </nav>
+  <main id="app"></main>
+  <footer>
+    Quick pre-key reminder. Not a full route guide. Mechanics summarized for Midnight S2.
+  </footer>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
