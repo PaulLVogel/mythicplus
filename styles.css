@@ -19,7 +19,7 @@ body { min-height: 100vh; background-image:
   radial-gradient(800px 400px at 100% 0%, #1a2210 0%, transparent 50%); }
 .top {
   display: flex; gap: 1.25rem; align-items: center; justify-content: space-between;
-  padding: 1.25rem 1.5rem 0.75rem; flex-wrap: wrap;
+  padding: 1.25rem 1.5rem 0.5rem; flex-wrap: wrap;
 }
 .brand { display: flex; gap: 0.85rem; align-items: center; }
 .keystone {
@@ -35,14 +35,24 @@ h1 { margin: 0; font-family: Cinzel, serif; font-size: 1.35rem; letter-spacing: 
   padding: 0.65rem 0.8rem; border-radius: 6px; font: inherit;
 }
 .search-wrap input:focus { outline: 1px solid var(--gold); }
-.filters {
-  display: flex; gap: 0.45rem; padding: 0.75rem 1.5rem 1rem; overflow-x: auto;
-}
+.toolbar { padding: 0 1.5rem 1rem; display: grid; gap: 0.65rem; }
+.filters { display: flex; gap: 0.45rem; overflow-x: auto; }
 .chip {
   background: var(--panel); border: 1px solid var(--line); color: var(--muted);
   padding: 0.4rem 0.7rem; border-radius: 999px; cursor: pointer; white-space: nowrap; font: inherit;
 }
 .chip:hover, .chip.active { border-color: var(--gold); color: var(--gold-soft); }
+.role-toggles {
+  border: 1px solid var(--line); background: var(--panel); border-radius: 10px;
+  margin: 0; padding: 0.45rem 0.7rem 0.55rem; display: flex; flex-wrap: wrap; gap: 0.35rem 1rem; align-items: center;
+}
+.role-toggles legend {
+  padding: 0 0.35rem; color: var(--muted); font-size: 0.72rem; letter-spacing: .08em; text-transform: uppercase;
+}
+.role-toggles label {
+  display: flex; gap: 0.35rem; align-items: center; font-size: 0.92rem; cursor: pointer;
+}
+.role-toggles input { accent-color: var(--gold); }
 main { padding: 0 1.5rem 3rem; display: grid; gap: 1.25rem; }
 .dungeon {
   background: linear-gradient(180deg, var(--panel), #10141c);

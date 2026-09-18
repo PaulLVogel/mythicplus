@@ -24,12 +24,23 @@
       <input id="search" type="search" placeholder="Search boss, mechanic, dungeon…" autocomplete="off" />
     </label>
   </header>
-  <nav class="filters" aria-label="Dungeon filters">
-    <button class="chip active" data-dungeon="all">All dungeons</button>
-  </nav>
+
+  <div class="toolbar">
+    <nav class="filters" aria-label="Dungeon filters">
+      <button class="chip active" data-dungeon="all">All dungeons</button>
+    </nav>
+    <fieldset class="role-toggles" aria-label="Which tips to show">
+      <legend>Show tips</legend>
+      <label><input type="checkbox" data-role="all" checked /> General</label>
+      <label><input type="checkbox" data-role="tank" /> Tank</label>
+      <label><input type="checkbox" data-role="heal" /> Healer</label>
+      <label><input type="checkbox" data-role="dps" /> DPS</label>
+    </fieldset>
+  </div>
+
   <main id="app"></main>
   <footer>
-    Quick pre-key reminder. Not a full route guide. Mechanics summarized for Midnight S2.
+    Default view is general tips only. Turn on Tank / Healer / DPS when you want the extra callouts.
   </footer>
   <script src="data-a.js"></script>
   <script src="data-b.js"></script>
