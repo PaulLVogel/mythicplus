@@ -106,12 +106,28 @@ const DUNGEONS_B = [
       },
       {
         name: "Kokia Blazehoof",
-        blurb: "Ritualists heal her and spawn Firestorms. Kick them or soak the orb.",
+        blurb: "She summons a Firestorm add on a player. Tank stacks them. Targeted Molten Boulder rolls a fire path.",
         roles: {
-          all: ["Blazebound Firestorms / ritualists are the real target. Kick their casts.", "If a Firestorm finishes, soak or kill the orb before it hits the group.", "Burning ground expands under her \u2014 drag her off it."],
-          tank: ["Move her after every fire patch."],
-          heal: ["Two Firestorm soaks overlapping need a CD."],
-          dps: ["A kicked ritualist is worth more than a global on Kokia."]
+          all: [
+            "Ritual of Blazebinding puts a circle on a player. That player drops the Blazebound Firestorm add where they stand \u2014 place it next to Kokia for cleave, not on the group.",
+            "Everyone swaps to the Firestorm. Kick Blaze Volley / Roaring Blaze. It also pulses Inferno on the group while it lives.",
+            "When the add dies it Burnouts: run more than 20 yards out. On Mythic+ that explosion leaves Scorched Earth. Drag Kokia off the patch.",
+            "Molten Boulder targets a player and slams a flaming boulder that rolls in that direction, leaving a burn trail, then explodes when it hits a wall or max range. Bait it into an open lane, never with your back to a wall."
+          ],
+          tank: [
+            "As soon as the add lands, drag Kokia onto it so melee can hit both.",
+            "Face Kokia so Molten Boulder rolls away from the raid into clear space.",
+            "Searing Blows is a 4-hit tank buster that stacks Searing Wounds. Mitigate every cast.",
+            "After Burnout, move both targets off the new fire patch."
+          ],
+          heal: [
+            "Inferno on the Firestorm is the group spike \u2014 CD that window.",
+            "Tank ticks hard during Searing Blows / Wounds."
+          ],
+          dps: [
+            "Firestorm first, then boss. Do not greed the last global into Burnout range.",
+            "If you have the Ritual circle, walk to the tank before it expires."
+          ]
         }
       },
       {
